@@ -146,7 +146,7 @@ const Sidebar = () => {
       <aside className='w-64 bg-linear-to-b from-gray-900 to-gray-800 h-screen overflow-y-auto fixed sidebar-scroll shadow-2xl'>
         {/* Logo Section */}
         <div className='p-6 border-b border-gray-700'>
-          <h1 className='text-2xl font-bold text-yellow-400 tracking-wide'>EduManage</h1>
+          <h1 className='text-2xl font-bold text-yellow-400 tracking-wide'>EduNexa</h1>
           <p className='text-xs text-gray-400 mt-1'>School Management System</p>
         </div>
 
