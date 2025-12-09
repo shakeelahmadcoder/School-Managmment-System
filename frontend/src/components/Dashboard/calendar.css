@@ -1,0 +1,210 @@
+
+        /* Calendar Container */
+        .school-calendar-wrapper {
+          background: white;
+        }
+
+        /* Remove default FullCalendar padding */
+        .fc {
+          padding: 0;
+        }
+
+        /* Toolbar with yellow icon and date */
+        .fc-toolbar {
+          margin-bottom: 15px !important;
+          padding: 0 8px;
+        }
+
+        .fc-toolbar-chunk {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        /* Yellow calendar icon before title */
+        .fc-toolbar-title::before {
+          content: "📅";
+          display: inline-flex;
+          width: 40px;
+          height: 40px;
+          background: #fbbf24;
+          border-radius: 8px;
+          align-items: center;
+          justify-content: center;
+          margin-right: 12px;
+          font-size: 20px;
+        }
+
+        .fc-toolbar-title {
+          font-size: 15px !important;
+          font-weight: 600 !important;
+          color: #374151;
+          display: flex;
+          align-items: center;
+        }
+
+        /* Navigation buttons */
+        .fc-button {
+          background: transparent !important;
+          border: none !important;
+          color: #6b7280 !important;
+          padding: 4px 8px !important;
+          box-shadow: none !important;
+        }
+
+        .fc-button:hover {
+          background: #f3f4f6 !important;
+        }
+
+        .fc-button-primary:not(:disabled):active,
+        .fc-button-primary:not(:disabled).fc-button-active {
+          background: transparent !important;
+          color: #6b7280 !important;
+        }
+
+        /* Hide the "today" button if exists */
+        .fc-today-button {
+          display: none !important;
+        }
+
+        /* Table borders */
+        .fc-scrollgrid {
+          border: 1px solid #e5e7eb !important;
+          border-radius: 8px;
+          overflow: hidden;
+        }
+
+        /* Header days */
+        .fc-col-header {
+          background: #f9fafb;
+        }
+
+        .fc-col-header-cell {
+          border: 1px solid #e5e7eb !important;
+          padding: 8px 0;
+          font-weight: 600;
+          font-size: 13px;
+          color: #6b7280;
+          text-align: center;
+        }
+
+        /* Day cells - FIXED HEIGHT */
+        .fc-daygrid-day {
+          height: 48px !important;
+          min-height: 48px !important;
+          max-height: 48px !important;
+          border: 1px solid #e5e7eb !important;
+        }
+
+        .fc-daygrid-day-frame {
+          height: 48px !important;
+          min-height: 48px !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 !important;
+        }
+
+        .fc-daygrid-day-top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        }
+
+        /* Date numbers */
+        .fc-daygrid-day-number {
+          font-size: 13px;
+          color: #374151;
+          font-weight: 500;
+          padding: 0 !important;
+        }
+
+        /* Other month dates (grayed out) */
+        .fc-day-other .fc-daygrid-day-number {
+          color: #9ca3af;
+        }
+
+        .fc-day-other {
+          background: #f9fafb;
+        }
+
+        /* Today highlight - Purple background for today */
+        .fc-day-today {
+          background: white !important;
+        }
+
+        .fc-day-today .fc-daygrid-day-number {
+          background: #6c5ce7 !important;
+          color: white !important;
+          border-radius: 8px !important;
+          width: calc(100% - 4px) !important;
+          height: calc(100% - 4px) !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          margin: 2px !important;
+        }
+
+        /* Events - Full cell colored badges */
+        .fc-event {
+          border: none !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          border-radius: 8px !important;
+          width: calc(100% - 4px) !important;
+          height: calc(100% - 4px) !important;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          font-weight: 500;
+          font-size: 13px;
+        }
+
+        .fc-event-main {
+          color: white !important;
+          padding: 0 !important;
+        }
+
+        .fc-daygrid-event {
+          margin-top: 0 !important;
+        }
+
+        .fc-daygrid-event-harness {
+          position: absolute !important;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        /* Event colors */
+        .event-purple {
+          background: #6c5ce7 !important;
+        }
+
+        .event-green {
+          background: #00b894 !important;
+        }
+
+        .event-pink {
+          background: #fd79a8 !important;
+        }
+
+        /* Remove scrollbars */
+        .fc-scroller {
+          overflow: hidden !important;
+        }
+
+        /* Calendar height */
+        .fc-daygrid-body {
+          height: auto !important;
+        }
+
+        .fc-scrollgrid-sync-table {
+          height: auto !important;
+        }
+     

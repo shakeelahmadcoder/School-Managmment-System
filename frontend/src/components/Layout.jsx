@@ -8,9 +8,9 @@ const Layout = () => {
     <div className='min-h-screen'>
         <div className='flex'>
         <Sidebar/>
-        <main className='flex-1 ml-64 p-6'>
+        <main className='flex-1 ml-64 p-6 bg-gray-200'>
             <Navbar/>
-            <div className='mt-20'>
+            <div className='mt-20 '>
               <Outlet />
             </div>
         </main>
